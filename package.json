@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Keypress webpack configuration",
   "main": "./src/app.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Kim Bouchouaram",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.1"
+  }
 }
