@@ -2,11 +2,20 @@
   "name": "keypress-webpack-skeleton",
   "version": "1.0.0",
   "description": "Keypress webpack configuration",
-  "main": "./src/app.js",
-  "scripts": {},
+  "main": "./src/js/app.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --mode=development --watch"
+  },
   "author": "Kim Bouchouaram",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.44.1"
+    "file-loader": "^6.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1"
   }
 }
