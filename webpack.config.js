@@ -1,4 +1,5 @@
 const path = require('path');
+const sassGlobImporter = require('node-sass-glob-importer');
 
 let srcPath = path.resolve(__dirname, 'src');
 let distPath = path.resolve(__dirname, 'dist');
@@ -33,7 +34,12 @@ module.exports = {
                         }
                     },
                     {
-                        loader: 'sass-loader'
+                        loader: 'sass-loader',
+                        options: {
+                            sassOptions: {
+                                importer: sassGlobImporter()
+                            }
+                        }
                     }
                 ]
             }
