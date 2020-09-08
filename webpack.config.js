@@ -6,7 +6,7 @@ let distPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
     entry: {
-        app: [path.join(srcPath, '/js/app.js'), path.join(srcPath, '/scss/app.scss')],
+        app: [path.join(srcPath, '/js/app.js'), path.join(srcPath, '/scss/app.scss'), path.join(srcPath, '/index.html')]
     },
     output: {
         path: distPath,
@@ -39,6 +39,17 @@ module.exports = {
                             sassOptions: {
                                 importer: sassGlobImporter()
                             }
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'index.html',
                         }
                     }
                 ]

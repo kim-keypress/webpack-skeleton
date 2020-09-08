@@ -1,1 +1,17 @@
 @import 'base/*.scss';
+
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+  }
+}
