@@ -13,11 +13,11 @@ It comes out that I'm not the only one thinking like that because [Rich-Harris](
 the same about it, that why he created [degit](https://github.com/Rich-Harris/degit).
 
 Install degit globally `npm install -g degit` and then use it to download the webpack skeleton into a directory
-`degit kim-keypress/webpack-skeleton`.
+`degit kim-keypress/webpack-skeleton [directory]`.
 
 ### TLDR
 
 ```
 npm install -g degit
-degit kim-keypress/webpack-skeleton
+degit kim-keypress/webpack-skeleton [directory]
 ```
